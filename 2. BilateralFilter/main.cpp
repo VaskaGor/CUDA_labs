@@ -14,8 +14,9 @@ int main() {
 	double sI, sS;
 	sI = 75.0;
 	sS = 75.0;
+	String fileName = "test_pic.png";
 
-	Mat input = imread("test_pic.png", IMREAD_GRAYSCALE);
+	Mat input = imread(fileName, IMREAD_GRAYSCALE);
 	// Create output Mat
 	Mat output_own(input.rows, input.cols, CV_8UC1);
 	Mat output_cv;
